@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Институт Прикладной Математики и Компьютерных Наук</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('1.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            background-color: #892422;
+            color: #fff;
+            text-align: center;
+            padding: 40px 0;
+            position: relative;
+        }
+
+        #header a {
+            text-decoration: none; 
+        }
+
+        #header img {
+            display: block; 
+            margin: 0 auto; 
+        }
+
+        #header h1 {
+            font-size: 2em;
+        }
+
+        #content {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .direction {
+            width: 100%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #892422; 
+            color: #000; 
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.5em;
+            position: relative;
+            z-index: 1;
+            transition: background-color 0.3s; 
+        }
+
+        .direction:hover {
+            background-color: #e68a00; 
+        }
+
+        .direction-list {
+            display: none;
+            background-color: #892422; 
+            padding: 20px;
+            margin: 0 5%;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+            
+            color: #000; 
+            transition: background-color 0.3s; 
+        }
+
+        .direction:hover .direction-list {
+            background-color: #e68a00; 
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        #contact {
+            background-color: #892422;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        #contact p {
+            margin: 0;
+        }
+
+        #contact a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #contact table {
+            margin: 0 auto; 
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <a href="https://tulsu.ru"> 
+            <img src="logo.jpg" alt="Логотип института"> 
+        </a>
+        <h1>Институт Прикладной Математики и Компьютерных Наук</h1>
+    </div>
+
+    <div id="content">
+        <h2>Списки поступивших в магистратуру</h2>
+        
+        <div class="direction" onclick="toggleDirection('direction1')">
+            Программное обеспечение интелектуальных систем
+            <div class="direction-list" id="direction1">
+                
+                <ul>
+                    <li>Булавинцев Алексей Сергеевич Личные достижения:6   Оценка за экзамен:77   Наличие оригинала диплома:да   Общий рейтинг:93</li>
+                    <li>Мартынов Иван викторович Личные достижения:3   Оценка за экзамен:60   Наличие оригинала диплома:да   Общий рейтинг:73</li>
+                    <li>Фомин Руслан Юрьевич Личные достижения:8   Оценка за экзамен:81   Наличие оригинала диплома:нет   Общий рейтинг:89</li>
+                    <li>Фокин Артем Витальевич Личные достижения:2   Оценка за экзамен:75   Наличие оригинала диплома:да   Общий рейтинг:87</li>
+		    <li>Шешуряк Дмитрий Евгеньевич Личные достижения:6   Оценка за экзамен:59   Наличие оригинала диплома:да   Общий рейтинг:75</li>
+		    <li>Джикия Лука Гочаевич Личные достижения:0   Оценка за экзамен:87   Наличие оригинала диплома:нет   Общий рейтинг:87</li>
+		    <li>Орлова София Семеновна Личные достижения:4   Оценка за экзамен:92   Наличие оригинала диплома:нет   Общий рейтинг:96</li>
+		    <li>Уткин Никита Васильевич Личные достижения:8   Оценка за экзамен:84   Наличие оригинала диплома:нет   Общий рейтинг:92</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="direction" onclick="toggleDirection('direction2')">
+            Системная инженерия и IT-аудит
+            <div class="direction-list" id="direction2">
+                
+                <ul>
+                    <li>Иванов Иван Иванович Личные достижения:6   Оценка за экзамен:77   Наличие оригинала диплома:да   Общий рейтинг:93</li>
+                    <li>Петров Петр Петрович Личные достижения:3   Оценка за экзамен:60   Наличие оригинала диплома:да   Общий рейтинг:73</li>
+                    <li>Абумуслимон Михаил Кондратиевич Личные достижения:8   Оценка за экзамен:81   Наличие оригинала диплома:нет   Общий рейтинг:89</li>
+                    <li>Ширяев Павел владимирович Личные достижения:2   Оценка за экзамен:75   Наличие оригинала диплома:да   Общий рейтинг:87</li>
+		    <li>Борзых Илья Алексеевич Личные достижения:6   Оценка за экзамен:59   Наличие оригинала диплома:да   Общий рейтинг:75</li>
+		    <li>Шурыгин Денис Эдуардович Личные достижения:0   Оценка за экзамен:87   Наличие оригинала диплома:нет   Общий рейтинг:87</li>
+		    <li>Мотин Максим Дмитриевич Личные достижения:4   Оценка за экзамен:92   Наличие оригинала диплома:нет   Общий рейтинг:96</li>
+		    <li>Курмаев Кирилл Валериевич Личные достижения:8   Оценка за экзамен:84   Наличие оригинала диплома:нет   Общий рейтинг:92</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="direction" onclick="toggleDirection('direction3')">
+            Информационная безопасность
+            <div class="direction-list" id="direction3">
+                
+                <ul>
+                    <li>Желтов Дмитрий Сергеевич Личные достижения:6   Оценка за экзамен:77   Наличие оригинала диплома:да   Общий рейтинг:93</li>
+                    <li>Калинин Максим Васильевич Личные достижения:3   Оценка за экзамен:60   Наличие оригинала диплома:да   Общий рейтинг:73</li>
+                    <li>Аллахвердян Роман Владимирович Личные достижения:8   Оценка за экзамен:81   Наличие оригинала диплома:нет   Общий рейтинг:89</li>
+                    <li>Гурциева Валерия Дмитриевна Личные достижения:2   Оценка за экзамен:75   Наличие оригинала диплома:да   Общий рейтинг:87</li>
+		    <li>Васильев Егор Владиславович Личные достижения:6   Оценка за экзамен:59   Наличие оригинала диплома:да   Общий рейтинг:75</li>
+		    <li>Асламов Яков Анатольевич Личные достижения:0   Оценка за экзамен:87   Наличие оригинала диплома:нет   Общий рейтинг:87</li>
+		    <li>Тим Яна Андреевна Личные достижения:4   Оценка за экзамен:92   Наличие оригинала диплома:нет   Общий рейтинг:96</li>
+		    <li>Лепенкин Алексей Владимирович Личные достижения:8   Оценка за экзамен:84   Наличие оригинала диплома:нет   Общий рейтинг:92</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Добавьте здесь остальные направления -->
+    </div>
+    
+
+   
+    <div id="contact">
+      <h1>Контактная информация</h1>
+        <table>
+            <tr>
+                <th>Адрес:</th>
+                <th>Телефон:</th>
+                <th>Почта</th>
+            </tr>
+            <tr>
+                <td>300012, г. Тула, пр. Ленина, д. 92</td>
+                <td>8 (4872) 25-79-50</td>
+                <td><a href="mailto:cyber@tsu.tula.ru">cyber@tsu.tula.ru</a></td>
+            </tr>
+
+    </table>
+    </div>
+
+    <script>
+        function toggleDirection(id) {
+            var directionList = document.getElementById(id);
+            if (directionList.style.display === "none" || directionList.style.display === "") {
+                directionList.style.display = "block";
+            } else {
+                directionList.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
